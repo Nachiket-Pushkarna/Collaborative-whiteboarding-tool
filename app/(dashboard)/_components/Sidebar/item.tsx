@@ -24,7 +24,8 @@ export const Item = ({ id, name, imageUrl }: ItemProps) => {
   };
 
   return (
-    <Hint label={name} side="right" align="start" sideOffset={18}>
+    <div className=" aspect-square relative">
+        <Hint label={name} side="right" align="start" sideOffset={18}>
       <Image
         width={50}
         height={30}
@@ -37,5 +38,7 @@ export const Item = ({ id, name, imageUrl }: ItemProps) => {
         )}
       />
     </Hint>
+    </div>
+    
   );
 };
